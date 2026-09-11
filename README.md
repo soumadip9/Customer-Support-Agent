@@ -1,4 +1,4 @@
-﻿# AI Customer Support Agent for E-Commerce (@AmazonHelp)
+# AI Customer Support Agent for E-Commerce (@AmazonHelp)
 
 An end-to-end, production-grade Customer Support AI Agent built for the `@AmazonHelp` domain using the Kaggle Twitter Customer Support (TWCS) dataset. 
 
@@ -123,6 +123,7 @@ Customer-Support-Agent/
 │   ├── llm/                             # Hybrid agent and Ollama client
 │   └── retrieval/                       # Embedding search and FAISS indexer
 ├── tests/                               # 137 unit and integration tests
+├── demo.py                              # Interactive local CLI demo
 ├── golden_dataset.jsonl                 # 200 human-verified golden benchmark
 ├── FINAL_AUDIT.md                       # Comprehensive compliance audit matrix
 ├── FINAL_REPORT.md                      # Complete ~6-page technical report
@@ -163,17 +164,43 @@ ollama serve
 
 ## 6. How to Run the Agent
 
-### Interactive / Single Query Inference
+### Interactive Local CLI Demo (`demo.py`)
+The project includes a standalone, interactive command-line demo (`demo.py`) that connects directly to the production **Context-Aware Hybrid v2 Agent**.
+
+**Prerequisite:** Ensure local Ollama is running (`ollama serve`).
+
+Run the CLI demo:
+```bash
+python demo.py
+```
+
+The CLI interactive loop prompts for customer inquiries and outputs the full pipeline analysis:
+- **Predicted Intent** (from 13-class TF-IDF classifier)
+- **Escalation Decision** (`AUTO_HANDLE` vs. `ESCALATE`)
+- **Escalation Reason** (context-aware diagnostic reason)
+- **Draft Response** (grounded in top-3 FAISS historical interactions via local `llama3.2:3b`)
+
+#### Example Queries to Try:
+1. **Self-Service / FAQ (`AUTO_HANDLE`)**:
+   > *"How do I turn off Prime auto renewal?"*
+2. **Delivery Issue (`ESCALATE`)**:
+   > *"My package was supposed to arrive yesterday and still hasn't come."*
+3. **Financial Dispute (`ESCALATE`)**:
+   > *"I was charged twice for the same order."*
+
+---
+
+### Programmatic Python Usage
 ```python
 from src.llm.hybrid_agent import HybridSupportAgent
 
 agent = HybridSupportAgent()
 
-result = agent.process_query("@AmazonHelp Where is my package? It was supposed to arrive yesterday!")
-print(f"Predicted Intent: {result['intent']}")
+result = agent.process_message("@AmazonHelp Where is my package? It was supposed to arrive yesterday!")
+print(f"Predicted Intent:    {result['intent']}")
 print(f"Escalation Decision: {result['escalation_decision']}")
-print(f"Escalation Reason: {result['escalation_reason']}")
-print(f"Draft Response: {result['draft_response']}")
+print(f"Escalation Reason:   {result['escalation_reason']}")
+print(f"Draft Response:      {result['draft_response']}")
 ```
 
 ---
