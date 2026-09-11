@@ -1,4 +1,4 @@
-﻿"""
+"""
 demo.py
 
 Command-Line Interface (CLI) Demo for the Hybrid v2 AI Customer Support Agent.
@@ -12,15 +12,15 @@ from src.llm.hybrid_agent import HybridSupportAgent
 
 
 def print_header() -> None:
-    print("\n" + "=" * 60)
-    print("       AI CUSTOMER SUPPORT AGENT — HYBRID V2")
-    print("=" * 60)
-    print("Type your customer inquiry below. Type 'help' for guidance or 'exit'/'quit' to exit.\n")
+    print("\n" + "=" * 40)
+    print(" AI CUSTOMER SUPPORT AGENT — HYBRID V2")
+    print("=" * 40)
+    print("Type your inquiry below. Type 'help' for guidance or 'exit'/'quit' to exit.\n")
 
 
 def print_help() -> None:
     print("\n[HELP]")
-    print("- Enter any customer message (e.g. '@AmazonHelp Where is my order?')")
+    print("- Enter any customer message (e.g. 'My package was supposed to arrive yesterday and still hasn\'t come.')")
     print("- The agent will classify the intent, decide whether to auto-handle or escalate,")
     print("  and generate an empathetic, policy-compliant draft response.")
     print("- Commands:")
@@ -34,18 +34,14 @@ def format_result(result: dict) -> None:
     reason = result.get("escalation_reason", "")
     draft = result.get("draft_response", "")
 
-    print("\n" + "-" * 60)
-    print("ANALYSIS")
-    print("-" * 60)
-    print(f"Intent:              {intent}")
-    print(f"Escalation Decision: {escalation}\n")
-    print("Reason:")
+    print("\n" + "-" * 40)
+    print(f"INTENT       : {intent}")
+    print(f"DECISION     : {escalation}\n")
+    print("REASON")
     print(f"{reason}\n")
-    print("-" * 60)
     print("DRAFT RESPONSE")
-    print("-" * 60)
     print(f"{draft}")
-    print("-" * 60 + "\n")
+    print("-" * 40 + "\n")
 
 
 def main() -> None:
@@ -62,7 +58,7 @@ def main() -> None:
 
     while True:
         try:
-            print("Customer message:")
+            print("Customer:")
             user_input = input("> ").strip()
             
             if not user_input:
