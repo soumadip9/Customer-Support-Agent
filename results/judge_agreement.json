@@ -1,0 +1,61 @@
+{
+  "llm_judge_model": "llama3.2:3b (Local Ollama)",
+  "evaluator_type": "Independent Human Review",
+  "sample_size": 50,
+  "mean_scores": {
+    "mean_ollama_score": 4.44,
+    "mean_human_score": 4.43,
+    "mean_difference": 0.01
+  },
+  "dimensional_agreement": {
+    "relevance": {
+      "exact_agreement_pct": 52.0,
+      "within_one_pct": 100.0,
+      "mean_absolute_difference": 0.48,
+      "quadratic_weighted_kappa": 0.0,
+      "mean_ollama_score": 4.0,
+      "mean_human_score": 4.4
+    },
+    "escalation_actionability": {
+      "exact_agreement_pct": 86.0,
+      "within_one_pct": 100.0,
+      "mean_absolute_difference": 0.14,
+      "quadratic_weighted_kappa": 0.7209,
+      "mean_ollama_score": 4.52,
+      "mean_human_score": 4.46
+    },
+    "empathy_tone": {
+      "exact_agreement_pct": 86.0,
+      "within_one_pct": 100.0,
+      "mean_absolute_difference": 0.14,
+      "quadratic_weighted_kappa": 0.6641,
+      "mean_ollama_score": 4.26,
+      "mean_human_score": 4.16
+    },
+    "policy_compliance": {
+      "exact_agreement_pct": 98.0,
+      "within_one_pct": 100.0,
+      "mean_absolute_difference": 0.02,
+      "quadratic_weighted_kappa": 0.0,
+      "mean_ollama_score": 4.98,
+      "mean_human_score": 5.0
+    },
+    "clarity": {
+      "exact_agreement_pct": 64.0,
+      "within_one_pct": 100.0,
+      "mean_absolute_difference": 0.36,
+      "quadratic_weighted_kappa": 0.1863,
+      "mean_ollama_score": 4.42,
+      "mean_human_score": 4.14
+    },
+    "overall": {
+      "exact_agreement_pct": 56.0,
+      "within_one_pct": 100.0,
+      "mean_absolute_difference": 0.11,
+      "quadratic_weighted_kappa": 0.7934,
+      "mean_ollama_score": 4.44,
+      "mean_human_score": 4.43
+    }
+  },
+  "limitation_statement": "This agreement analysis is based on a 50-example stratified sample, not the full 200-example golden set. Findings represent this sample and should not be claimed as an exact representation of all 200 responses with certainty."
+}

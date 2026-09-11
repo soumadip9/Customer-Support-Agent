@@ -1,0 +1,24 @@
+﻿# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pytest_cache/
+.pytest_cache/
+
+# Environments and Secrets
+.env
+.env.*
+*.secret
+*.pem
+*.key
+
+# Raw Datasets & Archives (>100MB)
+*.zip
+twcs.csv
+archive*.zip
+
+# Operating System & IDE Artifacts
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

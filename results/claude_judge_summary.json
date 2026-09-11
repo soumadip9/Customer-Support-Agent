@@ -1,0 +1,86 @@
+{
+  "n_evaluated": 200,
+  "mean_scores": {
+    "overall_quality": 4.72,
+    "relevance": 4.69,
+    "escalation_actionability": 4.82,
+    "empathy_tone": 4.97,
+    "policy_compliance": 4.92,
+    "clarity": 4.2
+  },
+  "score_distribution": {
+    "relevance": {
+      "5_star": 164,
+      "4_star": 22,
+      "3_star": 2,
+      "2_star": 12,
+      "1_star": 0
+    },
+    "escalation_actionability": {
+      "5_star": 170,
+      "4_star": 25,
+      "3_star": 4,
+      "2_star": 1,
+      "1_star": 0
+    },
+    "empathy_tone": {
+      "5_star": 196,
+      "4_star": 3,
+      "3_star": 1,
+      "2_star": 0,
+      "1_star": 0
+    },
+    "policy_compliance": {
+      "5_star": 184,
+      "4_star": 16,
+      "3_star": 0,
+      "2_star": 0,
+      "1_star": 0
+    },
+    "clarity": {
+      "5_star": 80,
+      "4_star": 79,
+      "3_star": 41,
+      "2_star": 0,
+      "1_star": 0
+    }
+  },
+  "intent_average_scores": {
+    "account_access_and_security": 4.72,
+    "damaged_or_wrong_item": 4.84,
+    "delivery_delay": 4.84,
+    "digital_and_device_troubleshooting": 4.63,
+    "driver_and_packaging_feedback": 4.71,
+    "general_product_and_service_faq": 4.47,
+    "order_cancellation": 4.87,
+    "order_tracking_inquiry": 4.82,
+    "other_or_unsupported": 4.68,
+    "payment_and_billing_issue": 4.58,
+    "prime_membership_inquiry": 4.68,
+    "promotion_and_discount_inquiry": 4.53,
+    "refund_inquiry": 4.8
+  },
+  "human_alignment_verdicts": {
+    "AGREE": 186,
+    "DISAGREE": 5,
+    "PARTIAL": 9
+  },
+  "human_alignment_percentage": {
+    "AGREE": 93.0,
+    "DISAGREE": 2.5,
+    "PARTIAL": 4.5
+  },
+  "top_strengths": {
+    "Professional, empathetic customer-first tone": 199,
+    "Appropriate actionability and resolution pathway": 195,
+    "Accurate intent and topic recognition": 186,
+    "Strict policy compliance and secure customer handling": 184,
+    "Clear and concise phrasing suitable for chat/social support": 159
+  },
+  "top_weaknesses": {
+    "Response length or formatting needs refinement": 41,
+    "Intent misalignment with customer inquiry": 14,
+    "Sub-optimal escalation decision or vague next steps": 5,
+    "Tone lacks warmth or empathy for frustrated user": 1
+  }
+}

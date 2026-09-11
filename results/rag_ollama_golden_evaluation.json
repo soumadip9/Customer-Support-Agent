@@ -1,0 +1,308 @@
+{
+  "n_examples": 200,
+  "intent": {
+    "accuracy": 0.425,
+    "macro_f1": 0.4251,
+    "per_class": {
+      "account_access_and_security": {
+        "precision": 0.9167,
+        "recall": 0.7333,
+        "f1": 0.8148,
+        "support": 15
+      },
+      "damaged_or_wrong_item": {
+        "precision": 0.75,
+        "recall": 0.6667,
+        "f1": 0.7059,
+        "support": 18
+      },
+      "delivery_delay": {
+        "precision": 0.4062,
+        "recall": 0.65,
+        "f1": 0.5,
+        "support": 20
+      },
+      "digital_and_device_troubleshooting": {
+        "precision": 1.0,
+        "recall": 0.2143,
+        "f1": 0.3529,
+        "support": 14
+      },
+      "driver_and_packaging_feedback": {
+        "precision": 0.2308,
+        "recall": 0.2143,
+        "f1": 0.2222,
+        "support": 14
+      },
+      "general_product_and_service_faq": {
+        "precision": 0.4667,
+        "recall": 0.5,
+        "f1": 0.4828,
+        "support": 14
+      },
+      "order_cancellation": {
+        "precision": 0.2683,
+        "recall": 0.7333,
+        "f1": 0.3929,
+        "support": 15
+      },
+      "order_tracking_inquiry": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 18
+      },
+      "other_or_unsupported": {
+        "precision": 0.0741,
+        "recall": 0.2,
+        "f1": 0.1081,
+        "support": 10
+      },
+      "payment_and_billing_issue": {
+        "precision": 0.7778,
+        "recall": 0.4375,
+        "f1": 0.56,
+        "support": 16
+      },
+      "prime_membership_inquiry": {
+        "precision": 0.4,
+        "recall": 0.2667,
+        "f1": 0.32,
+        "support": 15
+      },
+      "promotion_and_discount_inquiry": {
+        "precision": 0.7,
+        "recall": 0.6364,
+        "f1": 0.6667,
+        "support": 11
+      },
+      "refund_inquiry": {
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "support": 20
+      }
+    },
+    "confusion_matrix": {
+      "account_access_and_security": {
+        "account_access_and_security": 11,
+        "damaged_or_wrong_item": 0,
+        "delivery_delay": 0,
+        "digital_and_device_troubleshooting": 0,
+        "driver_and_packaging_feedback": 0,
+        "general_product_and_service_faq": 0,
+        "order_cancellation": 1,
+        "order_tracking_inquiry": 0,
+        "other_or_unsupported": 2,
+        "payment_and_billing_issue": 1,
+        "prime_membership_inquiry": 0,
+        "promotion_and_discount_inquiry": 0,
+        "refund_inquiry": 0
+      },
+      "damaged_or_wrong_item": {
+        "account_access_and_security": 0,
+        "damaged_or_wrong_item": 12,
+        "delivery_delay": 2,
+        "digital_and_device_troubleshooting": 0,
+        "driver_and_packaging_feedback": 0,
+        "general_product_and_service_faq": 0,
+        "order_cancellation": 1,
+        "order_tracking_inquiry": 0,
+        "other_or_unsupported": 3,
+        "payment_and_billing_issue": 0,
+        "prime_membership_inquiry": 0,
+        "promotion_and_discount_inquiry": 0,
+        "refund_inquiry": 0
+      },
+      "delivery_delay": {
+        "account_access_and_security": 0,
+        "damaged_or_wrong_item": 0,
+        "delivery_delay": 13,
+        "digital_and_device_troubleshooting": 0,
+        "driver_and_packaging_feedback": 1,
+        "general_product_and_service_faq": 1,
+        "order_cancellation": 0,
+        "order_tracking_inquiry": 4,
+        "other_or_unsupported": 1,
+        "payment_and_billing_issue": 0,
+        "prime_membership_inquiry": 0,
+        "promotion_and_discount_inquiry": 0,
+        "refund_inquiry": 0
+      },
+      "digital_and_device_troubleshooting": {
+        "account_access_and_security": 0,
+        "damaged_or_wrong_item": 0,
+        "delivery_delay": 0,
+        "digital_and_device_troubleshooting": 3,
+        "driver_and_packaging_feedback": 2,
+        "general_product_and_service_faq": 2,
+        "order_cancellation": 0,
+        "order_tracking_inquiry": 0,
+        "other_or_unsupported": 2,
+        "payment_and_billing_issue": 0,
+        "prime_membership_inquiry": 5,
+        "promotion_and_discount_inquiry": 0,
+        "refund_inquiry": 0
+      },
+      "driver_and_packaging_feedback": {
+        "account_access_and_security": 0,
+        "damaged_or_wrong_item": 2,
+        "delivery_delay": 7,
+        "digital_and_device_troubleshooting": 0,
+        "driver_and_packaging_feedback": 3,
+        "general_product_and_service_faq": 0,
+        "order_cancellation": 1,
+        "order_tracking_inquiry": 0,
+        "other_or_unsupported": 1,
+        "payment_and_billing_issue": 0,
+        "prime_membership_inquiry": 0,
+        "promotion_and_discount_inquiry": 0,
+        "refund_inquiry": 0
+      },
+      "general_product_and_service_faq": {
+        "account_access_and_security": 0,
+        "damaged_or_wrong_item": 1,
+        "delivery_delay": 0,
+        "digital_and_device_troubleshooting": 0,
+        "driver_and_packaging_feedback": 0,
+        "general_product_and_service_faq": 7,
+        "order_cancellation": 1,
+        "order_tracking_inquiry": 1,
+        "other_or_unsupported": 2,
+        "payment_and_billing_issue": 0,
+        "prime_membership_inquiry": 0,
+        "promotion_and_discount_inquiry": 2,
+        "refund_inquiry": 0
+      },
+      "order_cancellation": {
+        "account_access_and_security": 0,
+        "damaged_or_wrong_item": 0,
+        "delivery_delay": 1,
+        "digital_and_device_troubleshooting": 0,
+        "driver_and_packaging_feedback": 1,
+        "general_product_and_service_faq": 0,
+        "order_cancellation": 11,
+        "order_tracking_inquiry": 0,
+        "other_or_unsupported": 2,
+        "payment_and_billing_issue": 0,
+        "prime_membership_inquiry": 0,
+        "promotion_and_discount_inquiry": 0,
+        "refund_inquiry": 0
+      },
+      "order_tracking_inquiry": {
+        "account_access_and_security": 0,
+        "damaged_or_wrong_item": 1,
+        "delivery_delay": 4,
+        "digital_and_device_troubleshooting": 0,
+        "driver_and_packaging_feedback": 4,
+        "general_product_and_service_faq": 1,
+        "order_cancellation": 3,
+        "order_tracking_inquiry": 0,
+        "other_or_unsupported": 5,
+        "payment_and_billing_issue": 0,
+        "prime_membership_inquiry": 0,
+        "promotion_and_discount_inquiry": 0,
+        "refund_inquiry": 0
+      },
+      "other_or_unsupported": {
+        "account_access_and_security": 1,
+        "damaged_or_wrong_item": 0,
+        "delivery_delay": 1,
+        "digital_and_device_troubleshooting": 0,
+        "driver_and_packaging_feedback": 2,
+        "general_product_and_service_faq": 4,
+        "order_cancellation": 0,
+        "order_tracking_inquiry": 0,
+        "other_or_unsupported": 2,
+        "payment_and_billing_issue": 0,
+        "prime_membership_inquiry": 0,
+        "promotion_and_discount_inquiry": 0,
+        "refund_inquiry": 0
+      },
+      "payment_and_billing_issue": {
+        "account_access_and_security": 0,
+        "damaged_or_wrong_item": 0,
+        "delivery_delay": 1,
+        "digital_and_device_troubleshooting": 0,
+        "driver_and_packaging_feedback": 0,
+        "general_product_and_service_faq": 0,
+        "order_cancellation": 5,
+        "order_tracking_inquiry": 2,
+        "other_or_unsupported": 0,
+        "payment_and_billing_issue": 7,
+        "prime_membership_inquiry": 1,
+        "promotion_and_discount_inquiry": 0,
+        "refund_inquiry": 0
+      },
+      "prime_membership_inquiry": {
+        "account_access_and_security": 0,
+        "damaged_or_wrong_item": 0,
+        "delivery_delay": 2,
+        "digital_and_device_troubleshooting": 0,
+        "driver_and_packaging_feedback": 0,
+        "general_product_and_service_faq": 0,
+        "order_cancellation": 5,
+        "order_tracking_inquiry": 0,
+        "other_or_unsupported": 3,
+        "payment_and_billing_issue": 0,
+        "prime_membership_inquiry": 4,
+        "promotion_and_discount_inquiry": 1,
+        "refund_inquiry": 0
+      },
+      "promotion_and_discount_inquiry": {
+        "account_access_and_security": 0,
+        "damaged_or_wrong_item": 0,
+        "delivery_delay": 0,
+        "digital_and_device_troubleshooting": 0,
+        "driver_and_packaging_feedback": 0,
+        "general_product_and_service_faq": 0,
+        "order_cancellation": 3,
+        "order_tracking_inquiry": 0,
+        "other_or_unsupported": 1,
+        "payment_and_billing_issue": 0,
+        "prime_membership_inquiry": 0,
+        "promotion_and_discount_inquiry": 7,
+        "refund_inquiry": 0
+      },
+      "refund_inquiry": {
+        "account_access_and_security": 0,
+        "damaged_or_wrong_item": 0,
+        "delivery_delay": 1,
+        "digital_and_device_troubleshooting": 0,
+        "driver_and_packaging_feedback": 0,
+        "general_product_and_service_faq": 0,
+        "order_cancellation": 10,
+        "order_tracking_inquiry": 0,
+        "other_or_unsupported": 3,
+        "payment_and_billing_issue": 1,
+        "prime_membership_inquiry": 0,
+        "promotion_and_discount_inquiry": 0,
+        "refund_inquiry": 5
+      }
+    }
+  },
+  "escalation": {
+    "accuracy": 0.68,
+    "precision": 0.6786,
+    "recall": 0.8333,
+    "f1": 0.748,
+    "confusion_matrix": {
+      "AUTO_HANDLE": {
+        "AUTO_HANDLE": 41,
+        "ESCALATE": 45
+      },
+      "ESCALATE": {
+        "AUTO_HANDLE": 19,
+        "ESCALATE": 95
+      }
+    }
+  },
+  "combined": {
+    "accuracy": 0.405
+  },
+  "meta": {
+    "golden_path": "golden_dataset.jsonl",
+    "predictions_path": "results/rag_ollama_golden_predictions.jsonl",
+    "model_name": "rag_ollama_llama3.2:3b"
+  }
+}
