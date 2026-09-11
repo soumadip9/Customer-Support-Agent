@@ -17,6 +17,14 @@ The system implements a **Context-Aware Hybrid Architecture** combining statisti
 
 ---
 
+## Demo
+
+▶️ **[Watch the CLI Demo](https://drive.google.com/file/d/1dkJ5CQG4z1kKnO7ER5IEzVpCsCOjS8_4/view?usp=drivesdk)**
+
+The video demonstrates the local CLI running the Hybrid v2 customer support agent across `AUTO_HANDLE` and `ESCALATE` scenarios. *(Note: This is a local CLI demonstration and not a publicly hosted web application.)*
+
+---
+
 ## 1. System Architecture
 
 ```
